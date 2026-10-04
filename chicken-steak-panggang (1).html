@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chicken Steak Panggang — Paha Ayam Saus Barbeque</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap">
+<style>
+:root{--bg:#F3B63F;--ink:#1F3D2B;--card:#FFF4D6;--accent:#B3261E;--on-accent:#FFF4D6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1F3D2B;--ink:#F3B63F;--card:#2A4D38;--accent:#F3B63F;--on-accent:#1F3D2B}}
+:root[data-theme="dark"]{--bg:#1F3D2B;--ink:#F3B63F;--card:#2A4D38;--accent:#F3B63F;--on-accent:#1F3D2B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.6}
+h1,h2,h3,.btn,.chip,.sz{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+main{max-width:720px;margin:0 auto;padding:0 20px 56px}
+header{padding:28px 0 8px;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;font-size:20px}
+.hero h1{font-size:clamp(44px,13vw,88px);line-height:.95;margin:28px 0 20px;font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:36ch;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:0;font-size:17px;cursor:pointer}
+.btn:focus-visible,.sz:focus-visible,.q:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.plate{margin:32px 0;display:flex;justify-content:center}
+h2{font-size:34px;margin:48px 0 8px;letter-spacing:-.02em}
+.isi{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.isi li{background:var(--card);border-radius:16px;padding:14px 18px}
+.isi b{font-family:"Bricolage Grotesque",Arial,sans-serif;display:block}
+.sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.sz{padding:14px 6px;border-radius:18px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-weight:800;font-size:18px;line-height:1.2}
+.sz small{display:block;font-weight:500;font-size:14px;margin-top:4px}
+.sz[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.order{background:var(--card);border-radius:20px;padding:22px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.qty{display:flex;align-items:center;gap:14px;font:800 22px "Bricolage Grotesque",Arial,sans-serif}
+.q{width:44px;height:44px;border-radius:50%;border:2px solid var(--ink);background:transparent;color:var(--ink);font-size:24px;cursor:pointer;line-height:1}
+.total{font:800 34px "Bricolage Grotesque",Arial,sans-serif}
+.btn.full{display:block;text-align:center;width:100%}
+footer{margin-top:48px;font-size:16px}
+</style>
+</head>
+<body>
+<main>
+<header>Chicken Steak Panggang</header>
+
+<section class="hero">
+  <h1>Paha ayam panggang, saus barbeque.</h1>
+  <p>Dipanggang sampai wangi dan juicy, disiram saus barbeque, dengan sayur kentang, wortel, dan buncis. Mulai Rp15.000.</p>
+  <a class="btn" href="#pesan">Pesan sekarang</a>
+</section>
+
+<div class="plate" aria-hidden="true">
+<svg viewBox="0 0 300 200" width="100%" style="max-width:360px">
+  <ellipse cx="150" cy="110" rx="140" ry="82" fill="var(--card)"/>
+  <ellipse cx="150" cy="108" rx="112" ry="62" fill="none" stroke="var(--ink)" stroke-width="2" opacity=".35"/>
+  <path d="M62 96c0-26 42-44 90-42 46 2 80 20 80 46 0 28-42 42-86 42s-84-16-84-46z" fill="#9A4A14"/>
+  <path d="M74 98c0-20 36-34 78-32 40 2 68 16 68 36 0 22-36 32-74 32s-72-12-72-36z" fill="#B3261E" opacity=".85"/>
+  <g stroke="#3B1A08" stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M96 84l30 44"/><path d="M122 78l34 50"/><path d="M150 76l34 50"/><path d="M178 78l28 40"/></g>
+  <path d="M96 76c14-8 34-11 52-10" stroke="#FFF4D6" stroke-width="4" fill="none" stroke-linecap="round" opacity=".5"/>
+  <rect x="236" y="92" width="22" height="22" rx="5" fill="#E8C15A"/><rect x="250" y="112" width="20" height="20" rx="5" fill="#D9B04A"/>
+  <g stroke="#E8731A" stroke-width="9" stroke-linecap="round"><path d="M34 112l26 14"/><path d="M40 134l24 4"/></g>
+  <g stroke="#4E8B3A" stroke-width="5" stroke-linecap="round"><path d="M44 150c14 4 28 4 44 0"/><path d="M52 162c12 3 24 3 38 0"/></g>
+</svg>
+</div>
+
+<section>
+  <h2>Isi satu porsi</h2>
+  <ul class="isi">
+    <li><b>Paha ayam panggang</b>Empuk, juicy, dipanggang bukan digoreng.</li>
+    <li><b>Saus barbeque</b>Manis, gurih, ada aroma asap.</li>
+    <li><b>Mix sayur</b>Kentang, wortel, dan buncis.</li>
+  </ul>
+</section>
+
+<section id="pesan">
+  <h2>Pilih ukuran</h2>
+  <div class="sizes" role="group" aria-label="Ukuran porsi"></div>
+  <div class="order">
+    <div class="row"><span>Jumlah</span>
+      <div class="qty"><button class="q" id="min" aria-label="Kurangi">−</button><span id="n">1</span><button class="q" id="plus" aria-label="Tambah">+</button></div>
+    </div>
+    <div class="row"><span id="ringkas"></span><span class="total" id="total"></span></div>
+    <a class="btn full" id="wa" href="#">Pesan lewat WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p><b>Pesan langsung via WhatsApp:</b><br>+62 858-0685-3292</p>
+</footer>
+</main>
+
+<script>
+var NO="6285806853292";
+var sizes=[{n:"Normal",p:15000},{n:"Sedang",p:18000},{n:"Besar",p:20000}];
+var cur=0,qty=1;
+var box=document.querySelector(".sizes");
+function rp(x){return "Rp"+x.toLocaleString("id-ID")}
+function render(){
+  var s=sizes[cur],t=s.p*qty;
+  document.getElementById("n").textContent=qty;
+  document.getElementById("ringkas").textContent=qty+" × "+s.n+" ("+rp(s.p)+")";
+  document.getElementById("total").textContent=rp(t);
+  var msg="Halo, saya mau pesan chicken steak panggang saus barbeque.\nUkuran: "+s.n+"\nJumlah: "+qty+"\nTotal: "+rp(t);
+  document.getElementById("wa").href="https://wa.me/"+NO+"?text="+encodeURIComponent(msg);
+  [].forEach.call(box.children,function(c,j){c.setAttribute("aria-pressed",j===cur)});
+}
+sizes.forEach(function(s,i){
+  var b=document.createElement("button");
+  b.className="sz";b.innerHTML=s.n+"<small>"+rp(s.p)+"</small>";
+  b.onclick=function(){cur=i;render()};
+  box.appendChild(b);
+});
+document.getElementById("plus").onclick=function(){qty=Math.min(qty+1,20);render()};
+document.getElementById("min").onclick=function(){qty=Math.max(qty-1,1);render()};
+render();
+</script>
+</body>
+</html>
